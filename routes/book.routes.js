@@ -11,7 +11,8 @@ const Book = require('../models/Book.model');
 // GET route to display all the books
 // ****************************************************************************************
 
-router.get('/books', (req, res) => {
+// You already have "/books" in the app.js, herefore you start with a simple "/". This is called the base path for your DB Entity (MongoDB Docuemnt)
+router.get('/', (req, res) => {
   Book.find()
    // You have to continue coding the route
 });
@@ -19,11 +20,5 @@ router.get('/books', (req, res) => {
 // ****************************************************************************************
 // GET route for displaying the book details page
 // ****************************************************************************************
-
-router.get('/books/:id', (req, res) => {
-  const id = req.params.id;
-  Book.findById(id)
-   // You have to continue coding the route
-});
 
 module.exports = router;
