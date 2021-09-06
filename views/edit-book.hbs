@@ -1,0 +1,29 @@
+<h1>EDIT BOOK</h1>
+<br>
+
+<form action="/books/{{_id}}/edit" method="POST">
+
+
+ <label for=''>Title</label>
+  <input type='text' name='title' value="{{title}}">
+
+  <br>
+  <br>
+  <label for=''>Descritpion</label>
+  <input type='text' name='description' value="{{description}}">
+
+  <br>
+  <br>
+  <label for=''>Author</label>
+  <input type='text' name='author' value="{{author}}">
+
+  <br>
+  <br>
+  <label for=''>Rating</label>
+  <input type='number' name='rating' value="{{rating}}">
+
+  <br>
+  <br>
+  <button type='submit'>SAVE</button>
+
+</form>

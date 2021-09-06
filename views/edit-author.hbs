@@ -1,0 +1,28 @@
+<h1>EDIT AUTHOR</h1>
+<br>
+
+<form action="/authors/{{_id}}/edit" method="POST">
+
+ <label for=''>Name</label>
+  <input type='text' name='name' value="{{name}}">
+
+  <br>
+    <br>
+  <label for=''>Surname</label>
+  <input type='text' name='surname' value="{{surname}}">
+
+  <br>
+    <br>
+  <label for=''>Nationality</label>
+  <input type='text' name='nationality' value="{{nationality}}">
+
+  <br>
+    <br>
+  <label for=''>Biography</label>
+  <input type='text' name='bio' value="{{bio}}">
+
+  <br>
+    <br>
+  <button type='submit'>SAVE</button>
+
+</form>
