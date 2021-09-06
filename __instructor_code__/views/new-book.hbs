@@ -13,7 +13,7 @@
   <br>
   <label for=''>Author</label>
   <select name='author'>
-    <option value="" >Select an author from the list</option>
+    <option disable selected value="" >Select an author from the list</option>
     {{#each allAuthors}}
     <option value= "{{this._id}}">{{this.name}} {{this.surname}}</option>
     {{/each}}
